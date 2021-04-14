@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main-container">
+        <form action="/list.json">
+            <label for="cars">Choose a letter:</label>
+            <select name="letter" id="letters">
+              <option></option>
+            </select>
+        </form>
+        <button id="button">Show names</button>
+
+        <ul class="list-ul"></ul>
+    </div>
+
+    <script src="./list.json"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
