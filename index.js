@@ -1,6 +1,5 @@
 const select = document.querySelector('#letters');
 const listContainer = document.querySelector('.list-ul');
-const button = document.querySelector('#button')
 const uniqueChar = [];
 
 function makeUniqueLetters(length) {
@@ -35,7 +34,7 @@ function renderNames(parrent, arr) {
     });
 };
 
-button.addEventListener('click', () => {
+select.addEventListener('change', () => {
     listContainer.innerHTML = '';
 
     fetch("./list.json")
